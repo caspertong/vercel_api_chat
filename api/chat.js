@@ -31,7 +31,7 @@ export default async function handler(req, res) {
             "Content-Type": "application/json",
           },
           body: JSON.stringify({
-            model: "ft:gpt-4o-mini-2024-07-18:personal::BdJ0o9gb",
+            model: "ft:gpt-4o-mini-2024-07-18:personal::BSRrm13a",
             messages: [
               {
                 role: "system",
