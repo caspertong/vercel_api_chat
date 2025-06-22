@@ -24,27 +24,27 @@ export default async function handler(req, res) {
     }
 
     try {
-        // const response = await fetch("https://api.openai.com/v1/chat/completions", {
-        //   method: "POST",
-        //   headers: {
-        //     "Authorization": `Bearer ${apiKey}`,
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify({
-        //     model: "ft:gpt-4o-mini-2024-07-18:personal::BSRrm13a",
-        //     messages: [
-        //       {
-        //         role: "system",
-        //         content: "You are a friendly e-commerce assistant named Lily who helps customers find fashion and jewelry products.",
-        //       },
-        //       { role: "user", content: userMessage },
-        //     ],
-        //   }),
-        // });
-
-        const response = await fetch("https://poe.com/JSecret_Store", {
+        const response = await fetch("https://api.openai.com/v1/chat/completions", {
           method: "POST",
+          headers: {
+            "Authorization": `Bearer ${apiKey}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            model: "ft:gpt-4o-mini-2024-07-18:personal::BSRrm13a",
+            messages: [
+              {
+                role: "system",
+                content: "You are a friendly e-commerce assistant named Lily who helps customers find fashion and jewelry products.",
+              },
+              { role: "user", content: userMessage },
+            ],
+          }),
         });
+
+        // const response = await fetch("https://poe.com/JSecret_Store", {
+        //   method: "POST",
+        // });
     
         const data = await response.json();
     
