@@ -47,10 +47,10 @@ export default async function handler(req, res) {
 
         // 4. Build the correct 'Serving Config' path directly to your Datastore rules
         // 'default_config' or 'default_search' is standard depending on your specific Agent Builder setup.
-        // Assuming 'default_config' as suggested by Gemini Web:
-        const servingConfig = client.servingConfigPath(
+        const servingConfig = client.projectLocationCollectionDataStoreServingConfigPath(
             projectId,
             'global',
+            'default_collection',
             dataStoreId,
             'default_config'
         );
