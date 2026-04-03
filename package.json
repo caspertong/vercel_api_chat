@@ -1,0 +1,24 @@
+{
+  "name": "vercel_api_chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caspertong/vercel_api_chat.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/caspertong/vercel_api_chat/issues"
+  },
+  "homepage": "https://github.com/caspertong/vercel_api_chat#readme",
+  "dependencies": {
+    "google-auth-library": "^10.6.2"
+  }
+}
