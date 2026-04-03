@@ -45,14 +45,15 @@ export default async function handler(req, res) {
             credentials
         });
 
-        // 4. Build the correct 'Serving Config' path directly to your Datastore rules
-        // 'default_config' or 'default_search' is standard depending on your specific Agent Builder setup.
-        const servingConfig = client.projectLocationCollectionDataStoreServingConfigPath(
+        // 4. Build the correct 'Serving Config' path directly to your Engine (App) rules
+        // Since you are using an App Engine that wraps multiple datastores, we use the Engine path builder here.
+        // We will keep passing your DATA_STORE_ID Vercel variable, because you placed the Engine ID inside it.
+        const servingConfig = client.projectLocationCollectionEngineServingConfigPath(
             projectId,
             'global',
             'default_collection',
-            dataStoreId,
-            'default_config'
+            dataStoreId, // This is your App/Engine ID (lily-knowledge-base_1775128374137)
+            'default_search'
         );
 
         // 5. Query Discovery Engine (Agent Builder)
