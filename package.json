@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/caspertong/vercel_api_chat#readme",
   "dependencies": {
+    "@google-cloud/discoveryengine": "^2.6.0",
     "@google/genai": "^1.48.0",
     "google-auth-library": "^10.6.2"
   }
