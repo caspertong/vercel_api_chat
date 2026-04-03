@@ -126,9 +126,6 @@ Use the provided .md files (01-13) as your primary source of truth for shipping,
       query: { text: userMessage },
       session: null, // Stateless follow-up structure by default
       answerGenerationSpec: {
-        modelSpec: {
-          modelVersion: 'gemini-2.5-flash', // Setting the cost-effective model explicitly
-        },
         ignoreAdversarialQuery: true,       // Prevent LLM answers on adversarial queries
         ignoreNonAnswerSeekingQuery: true,  // Ignore no answer summary for query
         ignoreLowRelevantContent: true,     // Prevent LLM answers with low relevant content
